@@ -1,0 +1,15 @@
+# Git leftovers
+*.orig
+# A generic build dir for Cmake projects
+build
+# Created by Kdevelop
+.kdev
+.kdev4
+# Created by QtCreator
+*.user
+# Created by OSX/macOS users
+.DS_STORE
+# Created by the Dolphin file browser (maybe others?)
+.directory
+# Used by Cquery for language-server stuff
+compile_commands.json
