@@ -2,7 +2,7 @@
 
 Type stupid emoji sentences in [Discord](https://discordapp.com/).
 
-![Example](./example.jpg?raw=true "Example")
+![Example](./example.png?raw=true "Example")
 
 ## Using
 
