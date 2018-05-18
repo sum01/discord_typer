@@ -1,6 +1,6 @@
 # Discord Typer
 
-Type stupid emoji sentences in [Discord](https://discordapp.com/).
+Write stupid emoji sentences in [Discord](https://discordapp.com/).
 
 ![Example](./example.png?raw=true "Example")
 
@@ -12,17 +12,20 @@ The display box is just for show, it's functionally useless.
 
 ## Dependencies
 
-[Qmake](https://doc.qt.io/qt-5/qmake-manual.html) is needed for building.
+[Cmake](https://cmake.org/) is needed for building.
 
 [Qt5](https://www.qt.io/) and it's [Core](https://doc.qt.io/qt-5/qtcore-index.html), [Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html), and [Gui](https://doc.qt.io/qt-5/qtgui-index.html) modules are required.
 
 ## Building
 
-Linux/macOS example:
-
 ```
 mkdir build
 cd build
-qmake ..
-make
+cmake ..
+cmake --build . --config Release
 ```
+
+## Installation
+
+Linux/macOS: `sudo make install`
+Windows: `runas /user:Administrator "msbuild /p:Configuration=Release INSTALL.vcxproj"`
