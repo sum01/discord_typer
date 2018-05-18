@@ -1,6 +1,6 @@
 # Discord Typer
 
-Write stupid emoji sentences in [Discord](https://discordapp.com/).
+Write stupid emoji letter sentences in [Discord](https://discordapp.com/).
 
 ![Example](./example.png?raw=true "Example")
 
@@ -27,5 +27,5 @@ cmake --build . --config Release
 
 ## Installation
 
-Linux/macOS: `sudo make install`
+Linux/macOS: `sudo make install`\
 Windows: `runas /user:Administrator "msbuild /p:Configuration=Release INSTALL.vcxproj"`
