@@ -42,5 +42,5 @@ cmake --build . --config Release
 
 You actually want to install this? Ok then, edit the last line of the build step with the following:
 
-Linux/macOS: `sudo cmake --build . --target install`\
+Linux/macOS: `sudo cmake --build . --target install`  
 Windows: `runas /user:Administrator "cmake --build . --config Release --target install"`
