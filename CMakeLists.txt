@@ -1,5 +1,5 @@
-# 3.7 required for Qt5 COMPONENTS
-cmake_minimum_required(VERSION 3.7.0 FATAL_ERROR)
+# 3.8 required for cxx_std_11
+cmake_minimum_required(VERSION 3.8.0 FATAL_ERROR)
 project(discord_typer VERSION 1.1.0 LANGUAGES CXX)
 
 # Runs Qt's MOC on necessary files
@@ -26,6 +26,10 @@ target_include_directories(discord_typer PRIVATE
 target_compile_features(discord_typer PRIVATE
 	cxx_std_11
 	cxx_range_for
+)
+
+set_target_properties(discord_typer PROPERTIES
+	PRIVATE_HEADER "src/mainwindow.hpp"
 )
 
 target_link_libraries(discord_typer PRIVATE
