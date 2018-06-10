@@ -2,10 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <QMainWindow>
-
-namespace Ui {
-	class MainWindow;
-}
+#include "ui_mainwindow.h"
 
 class MainWindow : public QMainWindow {
 	Q_OBJECT
