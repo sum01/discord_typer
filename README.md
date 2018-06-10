@@ -1,5 +1,7 @@
 # Discord Typer
 
+[![pipeline status](https://gitlab.com/sum01/discord_typer/badges/master/pipeline.svg)](https://gitlab.com/sum01/discord_typer/commits/master)
+
 Write stupid emoji letter sentences in [Discord](https://discordapp.com/).
 
 ![Example](./example.png?raw=true "Example")
