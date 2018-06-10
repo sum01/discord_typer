@@ -18,6 +18,17 @@ The display box is just for show, it's functionally useless.
 
 ## Building
 
+Linux/macOS:
+
+```
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+```
+
+Windows:
+
 ```
 mkdir build
 cd build
@@ -27,5 +38,7 @@ cmake --build . --config Release
 
 ## Installation
 
-Linux/macOS: `sudo make install`\
-Windows: `runas /user:Administrator "msbuild /p:Configuration=Release INSTALL.vcxproj"`
+You actually want to install this? Ok then, edit the last line of the build step with the following:
+
+Linux/macOS: `sudo cmake --build . --target install`\
+Windows: `runas /user:Administrator "cmake --build . --config Release --target install"`
