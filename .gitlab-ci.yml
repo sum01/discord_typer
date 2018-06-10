@@ -1,0 +1,9 @@
+image: registry.gitlab.com/sum01/discord_typer:latest
+
+build:
+  before_script:
+    - mkdir -p build
+    - cd build
+  script:
+    - cmake -DCMAKE_BUILD_TYPE=Debug ..
+    - cmake --build .
