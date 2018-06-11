@@ -1,9 +1,19 @@
 image: registry.gitlab.com/sum01/discord_typer:latest
 
-build:
+build:linux:
+  stage: build
   before_script:
     - mkdir -p build
     - cd build
   script:
     - cmake -DCMAKE_BUILD_TYPE=Debug ..
     - cmake --build .
+
+build:windows:
+  stage: build
+  before_script:
+    - mkdir build
+    - cd build
+  script:
+    - cmake -DCMAKE_TOOLCHAIN_FILE="../cmake/windows-toolchain.cmake" ..
+    - cmake -DCMAKE_TOOLCHAIN_FILE="../cmake/windows-toolchain.cmake" --build . --config Release
