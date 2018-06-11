@@ -16,4 +16,4 @@ build:windows:
     - cd build
   script:
     - cmake -DCMAKE_TOOLCHAIN_FILE="../cmake/windows-toolchain.cmake" ..
-    - cmake -DCMAKE_TOOLCHAIN_FILE="../cmake/windows-toolchain.cmake" --build . --config Release
+    - cmake --build . --config Debug
